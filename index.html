@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interactie Tijdlijn - Filosofie, Spiritualiteit & Wereldreligie</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		/* Basis reset */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: 'Montserrat', sans-serif;
+			background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+			color: #333;
+			line-height: 1.6;
+			padding: 20px;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-bottom: 40px;
+			font-size: 2.5rem;
+			color: #222;
+			text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+		}
+		
+		.timeline {
+			position: relative;
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 40px 0;
+		}
+		
+		.timeline::after {
+			content: '';
+			position: absolute;
+			width: 4px;
+			background-color: #007BFF;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		.timeline-item {
+			padding: 20px 30px;
+			position: relative;
+			background: #fff;
+			border-radius: 8px;
+			width: 45%;
+			margin-bottom: 40px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		.timeline-item:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+		}
+		
+		.timeline-item.left {
+			left: 0;
+		}
+		
+		.timeline-item.right {
+			left: 55%;
+		}
+		
+		.timeline-item::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 25px;
+			border: 10px solid transparent;
+		}
+		
+		.timeline-item.left::after {
+			right: -20px;
+			border-left-color: #fff;
+		}
+		
+		.timeline-item.right::after {
+			left: -20px;
+			border-right-color: #fff;
+		}
+		
+		.timeline-item h2 {
+			margin-top: 0;
+			color: #007BFF;
+			font-size: 1.8rem;
+			margin-bottom: 10px;
+		}
+		
+		.timeline-item img {
+			width: 100%;
+			height: auto;
+			border-radius: 6px;
+			margin: 10px 0;
+			transition: opacity 0.3s ease;
+		}
+		
+		.timeline-item img:hover {
+			opacity: 0.9;
+		}
+		
+		.timeline-item p {
+			font-size: 1rem;
+			line-height: 1.5;
+			color: #555;
+		}
+		
+		@media screen and (max-width: 768px) {
+			.timeline-item {
+				width: 90%;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			.timeline-item.right {
+				left: 5%;
+			}
+			.timeline::after {
+				left: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+<h1>Filosofie, Spiritualiteit & Wereldreligie</h1>
+<div class="timeline">
+	<!-- Tijdlijn item 1: Filosofie -->
+	<div class="timeline-item left">
+		<h2>Filosofie</h2>
+		<!-- Vervang de src met jouw eigen afbeelding (bijv. .webp) -->
+		<img src="images/DALL·E 2025-02-04 22.00.44 - A classical-style painting of a philosopher resembling Socrates engaged in a deep discussion with his students in ancient Athens. He has a beard, wear.webp" alt="Filosofie afbeelding">
+		<p>
+			<b>Verwachting:</b> Meer inzicht in verschillende denkstromingen en hoe
+			denkers door de eeuwen heen naar het leven hebben gekeken.
+			<br><b>Hoe helpt het me?:</b> Door kritisch te leren denken en vragen te
+			stellen, kan ik betere beslissingen nemen en mijn eigen visie scherper
+			formuleren.
+		</p>
+	</div>
+	
+	<!-- Tijdlijn item 2: Spiritualiteit -->
+	<div class="timeline-item right">
+		<h2>Spiritualiteit</h2>
+		<!-- Vervang de src met jouw eigen afbeelding (bijv. .webp) -->
+		<img src="images/DALL·E 2025-02-04 22.02.48 - A dramatic and visionary painting of a philosopher resembling Friedrich Nietzsche, standing with an intense gaze, surrounded by abstract cosmic imager.webp" alt="Spiritualiteit afbeelding">
+		<p>
+			<b>Verwachting:</b> Openstaan voor innerlijke groei, meditatie en het
+			ontdekken van verschillende vormen van zingeving.
+			<br><b>Hoe helpt het me?:</b> Het leert me om rust en balans te vinden
+			in mijn dagelijks leven en om bewust te zijn van mijn eigen waarden en
+			gevoelens.
+		</p>
+	</div>
+	
+	<!-- Tijdlijn item 3: Wereldreligie -->
+	<div class="timeline-item left">
+		<h2>Wereldreligie</h2>
+		<!-- Vervang de src met jouw eigen afbeelding (bijv. .webp) -->
+		<img src="images/DALL·E 2025-02-04 22.02.19 - A mystical and symbolic painting of a philosopher resembling Mircea Eliade, surrounded by ancient religious symbols, sacred texts, and ritual artifact.webp" alt="Wereldreligie afbeelding">
+		<p>
+			<b>Verwachting:</b> Begrip krijgen van verschillende religies, hun rituelen
+			en hoe ze mensen wereldwijd verbinden.
+			<br><b>Hoe helpt het me?:</b> Door meer te weten over andermans geloof
+			leer ik met meer respect en empathie naar anderen te kijken, wat
+			essentieel is in een diverse samenleving.
+		</p>
+	</div>
+</div>
+</body>
+</html>
